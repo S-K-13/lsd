@@ -44,7 +44,7 @@ def main():
     for i in range(n):
         print(selection_sorted[i])
 
-     bubble_sorted = percentages[:]
+    bubble_sorted = percentages[:]
     bubble_sort(bubble_sorted)
     print("Sorted list using Bubble Sort:")
     for i in range(n):
