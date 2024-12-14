@@ -45,19 +45,19 @@ def subtraction():
         
         
 def multiplication():
-    if c1 != r2:
+    if (c1 != r2):
         print("Multiplication cannot be done because the number of columns in M1 is not equal to the number of rows in M2!")
-    
-    result = [[0 for j in range(c2)] for i in range(r1)]
-    
-    for i in range(r1):
-        for j in range(c2):
-            for k in range(c1):
-                result[i][j] += M1[i][k] * M2[k][j]
-                
-    print("MULTIPLICATION OF MATRIX IS:")
-    for row in result:
-        print(row)
+    else:
+        result = [[0 for j in range(c2)] for i in range(r1)]
+        
+        for i in range(r1):
+            for j in range(c2):
+                for k in range(c1):
+                    result[i][j] += M1[i][k] * M2[k][j]
+                    
+        print("MULTIPLICATION OF MATRIX IS:")
+        for row in result:
+            print(row)
 
 
 def transpose():
